@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/acceptor/acceptor.iml" filepath="$PROJECT_DIR$/acceptor/acceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generator-mybatis/generator-mybatis.iml" filepath="$PROJECT_DIR$/generator-mybatis/generator-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recharge.iml" filepath="$PROJECT_DIR$/recharge.iml" />
+    </modules>
+  </component>
+</project>

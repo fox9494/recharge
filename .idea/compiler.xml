@@ -23,13 +23,18 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="acceptor" />
+        <module name="api" />
+        <module name="api-impl" />
         <module name="generator-mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="acceptor" target="1.8" />
-      <module name="generator-mybatis" target="1.6" />
-      <module name="recharge" target="1.6" />
+      <module name="acceptor" target="1.5" />
+      <module name="api" target="1.5" />
+      <module name="api-impl" target="1.5" />
+      <module name="delivery" target="1.5" />
+      <module name="generator-mybatis" target="1.5" />
+      <module name="recharge" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

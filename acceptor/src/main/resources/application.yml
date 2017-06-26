@@ -17,3 +17,11 @@ spring:
      password: root
      type: com.zaxxer.hikari.HikariDataSource
      driver-class-name: com.mysql.jdbc.Driver
+   dubbo:
+      application:
+         name: consumer
+      registry:
+         address: zookeeper://127.0.0.1:2181
+      scan: com.business.acceptor
+
+

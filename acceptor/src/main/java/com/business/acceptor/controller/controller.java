@@ -2,6 +2,7 @@ package com.business.acceptor.controller;
 
 import com.business.acceptor.entity.TPerson;
 import com.business.acceptor.entity.TStudent;
+import com.business.acceptor.service.DubboService;
 import com.business.acceptor.service.MyService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -26,6 +27,15 @@ public class controller {
 
     @Value(value = "${app.name}")//获取配置
     private String appName;
+
+    @Autowired
+    private DubboService dubboService;
+
+    @RequestMapping(value = "/dbtest",method = RequestMethod.GET)
+    @ApiOperation(value = "dubbo服务测试",notes = "插入并测试事务,参数是对象")
+    public String  dubboTest(@RequestParam String name){
+        return dubboService.show(name);
+    }
 
     @ApiIgnore
     @RequestMapping("/")

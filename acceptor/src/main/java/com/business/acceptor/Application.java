@@ -1,7 +1,9 @@
 package com.business.acceptor;
 
+import com.business.acceptor.service.DubboService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * Created by chenlile on 17-3-14.
@@ -11,6 +13,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        ConfigurableApplicationContext run = SpringApplication.run(Application.class, args);
+//        DubboService service = run.getBean(DubboService.class);
+//        System.out.println("invoke: " + service.show("chenlile"));
     }
 }
